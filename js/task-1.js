@@ -1,13 +1,13 @@
 function makeTransaction(quantity, pricePerDroid, customerCredits) {
-    // Обчислення загальної вартості замовлення
-    const totalPrice = quantity * pricePerDroid;
+  // Обчислення загальної вартості замовлення
+  const totalPrice = quantity * pricePerDroid;
 
-    // Перевірка чи клієнт має достатньо коштів на рахунку
-    if (totalPrice > customerCredits) {
-        return "Insufficient funds!";
-    } else {
-        return `You ordered ${quantity} droids worth ${totalPrice} credits!`;
-    }
+  // Перевірка чи клієнт має достатньо коштів на рахунку
+  if (totalPrice > customerCredits) {
+    return "Insufficient funds!";
+  } else {
+    return `You ordered ${quantity} droids worth ${totalPrice} credits!`;
+  }
 }
 
 // Перевірка роботи функції за допомогою виведення результатів в консоль

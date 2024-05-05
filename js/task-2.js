@@ -1,11 +1,11 @@
 function formatMessage(message, maxLength) {
-    // Перевірка довжини рядка
-    if (message.length <= maxLength) {
-        return message;
-    } else {
-        // Обрізання рядка та додавання "..."
-        return message.slice(0, maxLength) + "...";
-    }
+  // Перевірка довжини рядка
+  if (message.length <= maxLength) {
+    return message;
+  } else {
+    // Обрізання рядка та додавання "..."
+    return message.slice(0, maxLength) + "...";
+  }
 }
 
 // Перевірка роботи функції за допомогою виведення результатів в консоль
